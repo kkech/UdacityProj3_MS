@@ -15,6 +15,7 @@
       - [HyperDrive Best Model Run Properties](#hyperdrive-best-model-run-properties)
   - [Model Deployment](#model-deployment)
       - [Service of HyperDrive model with "Active" deployment state](#service-of-hyperdrive-model-with-active-deployment-state)
+  - [Screen Recording](#screen-recording)
   - [Future improvements](#future-improvements)
 
 # Capstone Project - Azure Machine Learning Engineer Nanodegree - Kechagias Konstantinos
