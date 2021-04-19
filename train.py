@@ -37,7 +37,7 @@ def main():
 
     # Drop non-numeric columns from the dataset
     df = dataset.to_pandas_dataframe()
-    df = df.drop(['Name', 'Ticket', 'Cabin'], axis=1)
+    df = df.drop(['Name', 'Ticket', 'Cabin', ], axis=1)
 
     # Separate x and y columns. 'Survived' is y, because it is was we want to predict
     y_df = df['Survived']
