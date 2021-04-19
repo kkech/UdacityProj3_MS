@@ -139,8 +139,7 @@ The expected input type is a JSON with the following format:
 ![automl_deployed_model](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLDeployedService.png)
 
 #### Request body of AutoML endpoint call
-![automl_request_body]https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLRequestData.png)
-
+![automl_request_body](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLRequestData.png)
 
 #### Service of AutoML model with "Active" deployment state, scoring URI, and swagger URI. Also, a response from the server is included.
 ![automl_response](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLResponse_AND_ServiceStatus.png)
