@@ -22,7 +22,7 @@
 
 In the capstone project I will use the knowledge that I obtained during **Machine Learning Engineer with Microsoft Azure Nanodegree Program** to solve the [Kaggle Titanic Challenge](https://www.kaggle.com/c/titanic)
 
-Some passengers of the titanic were more likely to survive than others. The dataset from Kaggle give information about 871 passengers including a column that states if they have survived or not. My target is to make a model that will predict which passengers survived the Titanic.
+Some passengers of the titanic were more likely to survive than others. The dataset from Kaggle give information for 871 passengers. A a column indicates if they have survived or not. My target is to make a model that will predict which passengers survived the Titanic.
 
 Here we do this in two different ways:
 1. Using AutoML.
