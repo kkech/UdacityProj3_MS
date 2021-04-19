@@ -23,9 +23,9 @@ def main():
     # Parse data
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--data_url', type=str, default='https://raw.githubusercontent.com/clasimoes/nd00333-capstone/master/titanic_data/full_capstone.csv', help='URL of the dataset to be used')
-    parser.add_argument('--C', type=float, default=1.0, help="Inverse of regularization strength. Smaller values cause stronger regularization")
-    parser.add_argument('--max_iter', type=int, default=100, help="Maximum number of iterations to converge")
+    parser.add_argument('--data_url', type=str, default='https://raw.githubusercontent.com/kkech/UdacityProj3_MS/master/train.csv')
+    parser.add_argument('--C', type=float, default=1.0,)
+    parser.add_argument('--max_iter', type=int, default=100)
 
     args = parser.parse_args()
 
@@ -37,7 +37,7 @@ def main():
 
     # Drop non-numeric columns from the dataset
     df = dataset.to_pandas_dataframe()
-    df = df.drop(['Name', 'Ticket', 'Cabin', ], axis=1)
+    df = df.drop(['Name', 'Sex', 'Age', 'Ticket', 'Cabin', 'Embarked'], axis=1)
 
     # Separate x and y columns. 'Survived' is y, because it is was we want to predict
     y_df = df['Survived']
