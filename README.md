@@ -45,17 +45,17 @@ Find below the data dictionary:
 
 Variable | Definition | Key
 ------------ | ------------- | -------------
-Survived | Survival | 0 = No, 1 = Yes
-Nclass | Ticket class | 1 = 1st, 2 = 2nd, 3 = 3rd
-Name | Name | name of the passenger (string)
-Sex | Passenger Sex | String(male, female)
-Age	| Age | in years
-Pibsp | # of siblings / spouses aboard the Titanic	| 
-Parch | # of parents / children aboard the Titanic	| 
+Survived | Survival | integer
+Nclass | Ticket class | integer
+Name | Name of the passenger | string
+Sex | Passenger Sex | string
+Age	| Age | integer
+Pibsp | # of siblings / spouses aboard the Titanic	| integer
+Parch | # of parents / children aboard the Titanic	| integer
 Ticket | Ticket number	| string
-Fare | Passenger fare | Value (float)
+Fare | Passenger fare | float
 Cabin | Cabin number |  string
-Embarked | Port of Embarkation | String
+Embarked | Port of Embarkation | string
 
 The data has been uploaded to this Git repository [this repository](https://raw.githubusercontent.com/kkech/UdacityProj3_MS/master/train.csv).
 
@@ -182,6 +182,15 @@ The parameters used by this classifier are the following:
 
 #### HyperDrive Best Model Run
 ![hyperdrive_best_run_graph](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/hyperRunBestModel.png)
+
+
+## Screen Recording
+
+#### ScreenCast Youtube
+I recorded my screen in full screen mode at 1080p and 16:9 aspect ratio. I used OBS for the recording.
+
+![screencast]()
+
 
 ## Future improvements
 
