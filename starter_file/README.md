@@ -80,7 +80,6 @@ To access it in Azure notebooks, we need to download it from an external link in
 
 For that, we can use the `Dataset` class, which allows importing tabular data from files on the web.
 
-
 ## Automated ML
 For the AutoML run, I created a compute cluster to run the experiment. 
 
@@ -107,16 +106,16 @@ Voting Ensemble uses multiple models as inner estimators and each one has its un
 
 
 #### AutoML Run Details widget Pending
-![automl_run_details_widget]()
+![automl_run_details_widget](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLRunDetails.png)
 
 #### AutoML Run Details widget Completed
-![automl_run_details_widget]()
+![automl_run_details_widget](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLRunDetailsCompl.png)
 
 #### AutoML Best Model Run
-![automl_run_web_gui]()
+![automl_run_web_gui](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLBestModel.png)
 
 ## Model Deployment
-The model created by the HyperDrive deployed in an endpoint.
+The model created by the AutoML deployed in an endpoint.
 
 The expected input type is a JSON with the following format:
 ```json
@@ -135,14 +134,24 @@ The expected input type is a JSON with the following format:
         ]
 ```
 
-#### Service of HyperDrive model with "Active" deployment state
-![hyperdrive_service_active]()
+#### Service of AutoML deployed model
+![automl_deployed_model](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLDeployedService.png)
+
+#### Request body of AutoML endpoint call
+![automl_request_body]https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLRequestData.png)
+
+
+#### Service of AutoML model with "Active" deployment state, scoring URI, and swagger URI. Also, a response from the server is included.
+![automl_response](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLResponse_AND_ServiceStatus.png)
+
+#### Service of AutoML model proof of deletion
+![automl_service_active](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLProofOfDeleteion_AND_Logging.png)
 
 ## Standout
 My deployed web app had enabled logging. I used application insights for logging to Monitor and collect data from ML web service endpoint. Logging was enabled programmatically, and the code can be found in the jupyter.
 
 #### Application Insights Logging
-![hyperdrive_run_details]()
+![automl_run_logging](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/autoMLProofOfDeleteion_AND_Logging.png)
 
 ## Hyperparameter Tuning
 I used Hyperpameter Tuning Tool with a Logistic Regression model from the SKLearn framework in order to classify if a passenger would survive or not in the Titanic.
@@ -162,15 +171,17 @@ The parameters used by this classifier are the following:
 * C = 0.9758520032406058
 * Max iterations = 100000
 
-#### HyperDrive Run Details widget
-![hyperdrive_run_details]()
+#### HyperDrive Run Parameters to be tuned
+![hyperdrive_run_params](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/hyperParamToTune.png)
+
+#### HyperDrive Run Details widget pending
+![hyperdrive_run_details_pending](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/hyperRunDetailsPend.png)
+
+#### HyperDrive Run Details widget completed
+![hyperdrive_run_details_completed](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/hyperRunDetailsCompl.png)
 
 #### HyperDrive Best Model Run
-![hyperdrive_best_run_graph]()
-
-#### HyperDrive Best Model Run Properties
-![hyperdrive_best_run_parameters]()
-
+![hyperdrive_best_run_graph](https://github.com/kkech/UdacityProj3_MS/blob/master/starter_file/screenshots/hyperRunBestModel.png)
 
 ## Future improvements
 
