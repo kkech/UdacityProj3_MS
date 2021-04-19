@@ -1,4 +1,4 @@
-- Capstone Project - Konstantinos Kechagias
+- [Capstone Project - Azure Machine Learning Engineer Nanodegree - Kechagias Konstantinos](#capstone-project---azure-machine-learning-engineer-nanodegree)
   - [Dataset](#dataset)
     - [Overview](#overview)
     - [Task](#task)
@@ -17,7 +17,7 @@
       - [Service of HyperDrive model with "Active" deployment state](#service-of-hyperdrive-model-with-active-deployment-state)
   - [Future improvements](#future-improvements)
 
-# Capstone Project - Azure Machine Learning Engineer Nanodegree
+# Capstone Project - Azure Machine Learning Engineer Nanodegree - - Kechagias Konstantinos
 
 
 In the capstone project I will use the knowledge that I obtained during **Machine Learning Engineer with Microsoft Azure Nanodegree Program** to solve the [Kaggle Titanic Challenge](https://www.kaggle.com/c/titanic)
