@@ -165,7 +165,7 @@ Hyperdrive is used to sample different values for two algorithm hyperparameters:
 I sample the values using Random Sampling, where hyperparameter values are randomly selected from the defined search space. `C` is chosen randomly in uniformly distributed between **0.001** and **1.0**. `Max_iter` sampled from one of the three values: **1000, 10000, and 100000**.
 
 ### Results
- HyperDrive accuracy was **85,20%** which is not so good as the AutoML run.
+ HyperDrive accuracy was **74,43%** which is not so good as the AutoML run.
  
 The parameters used by this classifier are the following:
 * C = 0.9758520032406058
