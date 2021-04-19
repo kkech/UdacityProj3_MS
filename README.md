@@ -33,6 +33,7 @@ The deployment is done using the Azure Python SDK, and creates an endpoint that 
 
 ## Dataset
 
+
 ### Overview
 
 The dataset chosen for this project is [Kaggle Titanic Challenge](https://www.kaggle.com/c/titanic). 
@@ -59,26 +60,26 @@ Embarked | Port of Embarkation | string
 
 The data has been uploaded to this Git repository [this repository](https://raw.githubusercontent.com/kkech/UdacityProj3_MS/master/train.csv).
 
-### Task
-In this project, I aim to create a model, **Accuracy** metric, to classify if a passenger survives or not the Titanic.
-I examine two approaches:
-
-1) **Using AutoML**:
-In this approach, I provided the dataset to AutoML and it automatically did the featurization, tries different algorithms, and test the performance of different models. 
-
-2) **Using HyperDrive**: 
-I tested a single algorithm and I created different models by providing different hyperparameters. The chosen algorithm is Logistic Regression using the framework SKLearn. Hyperparameter selection mad using Hyperdrive.
-
-In both cases, best performing model created during runs, had saved and deployed, and the parameters can be checked both in the Azure ML portal and run logs.
-
-The features that I used in this experiment are the ones described in the data dictionary above. However, in the case of the HyperDrive, we manually remove the columns "Name", "Ticket", and "Cabin", "Sex", "Embarked" which are not supported by the Logistic Regression classifier.
-
 ### Access
 
 The data has been uploaded to this Git repository [this repository](https://raw.githubusercontent.com/kkech/UdacityProj3_MS/master/train.csv).
 To access it in Azure notebooks, we need to download it from an external link into the Azure workspace.
 
 For that, we can use the `Dataset` class, which allows importing tabular data from files on the web.
+
+### Task
+I aim to create a model, using **Accuracy** as metric, to classify if a passenger survives or not the Titanic.
+I examine two solutions:
+
+1) **Automated ML**:
+I provided the dataset to AutoML and it automatically did the featurization, tries different algorithms, and test the performance of different models. 
+
+2) **HyperDrive**: 
+I tested a single algorithm and I created different models by providing different hyperparameters. The chosen algorithm is Logistic Regression using the framework SKLearn. Hyperparameter selection mad using Hyperdrive.
+
+In both cases, best performing model created during runs had been saved.
+
+The features that I used in this experiment was the ones described in the data dictionary above. However, in the case of the HyperDrive, we manually remove the columns "Name", "Ticket", and "Cabin", "Sex", "Embarked" which are not supported by the Logistic Regression classifier.
 
 ## Automated ML
 For the AutoML run, I created a compute cluster to run the experiment. 
