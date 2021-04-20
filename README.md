@@ -190,7 +190,7 @@ The parameters used by this classifier are the following:
 #### ScreenCast Youtube
 I recorded my screen in full screen mode at 1080p and 16:9 aspect ratio. I used OBS for the recording.
 
-![screencast]https://youtu.be/z-L6wLXLfX4)
+https://youtu.be/z-L6wLXLfX4
 
 
 
