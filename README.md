@@ -102,7 +102,7 @@ The constructor of `AutoMLConfig` class takes the following parameters:
 Because AutoML is an automated process that might take a long time, it is a good idea to enable the early stopping. This can help in the cost minimazation. AutoML with enable early stopping option is able to kill jobs that are not performing well, leading to better resource usage
 
 ### Results
-Among many experiments maded by the AutoML, the best model had an accuracy of **82,38%**.
+Among many experiments maded by the AutoML, the best model had an accuracy of **83,50%**.
 
 Voting Ensemble uses multiple models as inner estimators and each one has its unique hyperparameters.
 
